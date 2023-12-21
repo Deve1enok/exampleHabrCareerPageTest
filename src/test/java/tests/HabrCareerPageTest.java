@@ -74,7 +74,7 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
-    @DisplayName("Поиск работы \"тестирование\" с заполнением сортировки и её сброса ")
+    @DisplayName("Поиск работы \"тестирование\" с заполнением сортировки и её сброса")
     @Story("Позитивные тесты")
     void searchCareerFormFullSortingShouldBeReset () {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -104,7 +104,7 @@ public class HabrCareerPageTest extends BaseTest {
                 .checkDefaultBoxITCompany();
     }
     @Test
-    @Tag("negative_test")
+    @Tag("positive_test")
     @DisplayName("Поиск работы c пустым полем и заполненной сортировкой")
     @Story("Негативные тесты")
     void searchCareerFormEmptyShouldHaveFullSorting () {
