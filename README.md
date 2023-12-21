@@ -16,7 +16,6 @@ ____
 <a id="tools"></a>
 ## :computer:<a name="Используемый стек">**Используемый стек:**</a>
 
-
 <p align="center">
 <a href="https://www.java.com/"><img width="6%" title="Java" src="src/media/logo/java-original.svg"></a>
 <a href="https://selenide.org/"><img width="6%" title="Selenide" src="src/media/logo/Selenide.svg"></a>
@@ -33,7 +32,6 @@ ____
 ____
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
-
 -  *Поиск работы c пустым полем и пустой сортировкой*
 -  *Поиск работы "тестирование" c пустой сортировкой*
 -  *Поиск работы \"тестирование\" с заполнением сортировки*
@@ -82,21 +80,16 @@ ____
 ____
 
 
-
 ## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
-
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
 
 <p align="center">
 <img title="Telegram Notifications" src="src/media/screenshots/telegramBotInfo.jpg">
 </p>
-
 ____
 
 
 ## <img title="Selenoid" width="25" height="25" src="src/media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid.
-
-
 ### **В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.**
 <p align="center">
 <img title="Selenoid Video" src="src/media/screenshots/videoTestHabrCareer.gif">
