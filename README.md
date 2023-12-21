@@ -4,7 +4,7 @@
 <img alt="habrCareer" src="src/media/screenshots/habrCareerMainPage.jpg">
 
 
-## :scroll: Содержание:
+## :clipboard: Содержание:
 * <a href="#tools">Используемый стек</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 * <a href="#console">Запуск из терминала</a>
@@ -35,7 +35,7 @@ ____
 ____
 -  *Поиск работы c пустым полем и пустой сортировкой*
 -  *Поиск работы "тестирование" c пустой сортировкой*
--  *Поиск работы \"тестирование\" с заполнением сортировки"*
+-  *Поиск работы \"тестирование\" с заполнением сортировки*
 -  *Поиск работы c пустым полем и заполненной сортировкой*
 -  *Поиск работы "тестирование" с заполнением сортировки и её сброса*
 
@@ -50,12 +50,14 @@ gradle clean test_suite
 ____
 <a id="jenkins"></a>
 ## <img alt="Jenkins" height="25" src="src/media/logo/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/)</a>
+### **Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/jenkinsAutoTest.jpg" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/jenkinsAutoTest.jpg" alt="Jenkins"/></a>
 </p>
+**После выполнения сборки, в блоке `Build history` напротив номера сборки появятся значки `Allure Report` и `Allure TestOps`, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.**
 
 <a id="allure"></a>
-## <img src="src/media/logo/jenkins-original.svg" width="25" height="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/">отчёт</a>
+## <img src="src/media/logo/jenkins-original.svg" width="25" height="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
 
 ### *Основная страница отчёта*
 
