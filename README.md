@@ -15,6 +15,8 @@
 ____
 <a id="tools"></a>
 ## :computer:<a name="Используемый стек">**Используемый стек:**</a>
+____
+
 
 <p align="center">
 <a href="https://www.java.com/"><img width="6%" title="Java" src="src/media/logo/java-original.svg"></a>
@@ -32,15 +34,20 @@ ____
 ____
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
+____
+
 -  *Поиск работы c пустым полем и пустой сортировкой*
 -  *Поиск работы "тестирование" c пустой сортировкой*
 -  *Поиск работы \"тестирование\" с заполнением сортировки*
 -  *Поиск работы c пустым полем и заполненной сортировкой*
 -  *Поиск работы "тестирование" с заполнением сортировки и её сброса*
 
+____
 
 <a id="console"></a>
 ## :keyboard: Запуск автотестов
+____
+
 
 ***Локальный запуск тестов:***
 ```bash  
@@ -49,6 +56,8 @@ gradle clean test_suite
 ____
 <a id="jenkins"></a>
 ## <img alt="Jenkins" height="25" src="src/media/logo/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/)</a>
+____
+
 ### **Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
 <p align="center">  
 <a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/></a>
@@ -62,6 +71,7 @@ ____
 
 <a id="allure"></a>
 ## <img src="src/media/logo/jenkins-original.svg" width="25" height="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
+____
 
 ## *Основная страница отчёта*
 
@@ -76,10 +86,12 @@ ____
 </p>
 
 ____
-____
+
 
 
 ## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
+____
+
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
 
 <p align="center">
@@ -87,10 +99,11 @@ ____
 </p>
 
 ____
-____
 
 
 ## <img title="Selenoid" width="25" height="25" src="src/media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid.
+____
+
 ### **В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.**
 <p align="center">
 <img title="Selenoid Video" src="src/media/screenshots/videoTestHabrCareer.gif">
