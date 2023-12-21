@@ -59,6 +59,8 @@ ____
 <a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
 </p>
 
+____
+
 <a id="allure"></a>
 ## <img src="src/media/logo/jenkins-original.svg" width="25" height="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
 
