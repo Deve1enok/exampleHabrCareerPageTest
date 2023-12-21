@@ -4,7 +4,7 @@
 <img alt="habrCareer" src="src/media/screenshots/habrCareerMainPage.jpg">
 
 
-## :scroll: Содержание:
+## :clipboard: Содержание:
 * <a href="#tools">Используемый стек</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 * <a href="#console">Запуск из терминала</a>
