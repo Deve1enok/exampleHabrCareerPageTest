@@ -77,7 +77,7 @@ ____
 </p>
 
 
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+### <img title="Telegram" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.
 
@@ -85,7 +85,7 @@ ____
 <img title="Telegram Notifications" src="src/media/screenshots/telegramBotInfo.jpg">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="src/media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
