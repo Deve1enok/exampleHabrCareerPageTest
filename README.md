@@ -82,12 +82,12 @@ ____
 После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img title="Telegram Notifications" src="media/screenshots/telegramBotInfo.jpg">
+<img title="Telegram Notifications" src="src/media/screenshots/telegramBotInfo.jpg">
 </p>
 
 ### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
-  <img title="Selenoid Video" src="media/screenshots/videoTestHabrCareer.gif">
+  <img title="Selenoid Video" src="src/media/screenshots/videoTestHabrCareer.gif">
 </p>
