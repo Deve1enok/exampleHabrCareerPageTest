@@ -64,14 +64,14 @@ ____
 <a id="allure"></a>
 ## <img src="src/media/logo/jenkins-original.svg" width="25" height="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
 
-### *Основная страница отчёта*
+## *Основная страница отчёта*
 
 <p align="center">  
 <img title="Allure Overview Dashboard" src="src/media/screenshots/allureReportMain.jpg">  
 </p>  
 
-### *Подробный отчёт одного из тест-кейсов*
-
+## *Подробный отчёт одного из тест-кейсов*
+### **На данной странице можно посмотреть каждый тест-кейс, шаги воспроизведения, файлы(скриншоты,видео-воспроизведения,код и т.п.).**
 <p align="center">  
 <img title="Allure Overview Dashboard" src="src/media/screenshots/allureReportsTK.jpg">  
 </p>  
