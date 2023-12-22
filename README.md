@@ -1,4 +1,3 @@
-![изображение](https://github.com/Deve1enok/exampleHabrCareerPageTest/assets/139620575/8a55a347-0c94-4e45-96b9-e90a26aa7d0b)
 # Проект по автоматизации тестирования для [ХабрКарьера](https://career.habr.com/)
 
 <img alt="habrCareer" src="src/media/screenshots/habrCareerMainPage.jpg">
@@ -87,11 +86,15 @@ ____
 <p align="center">  
 <img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg">
 </p>
+
 Во вкладке <code>Test-cases</code> представлены все существующие тест-кейсы с подробным описанием, шагами воспроизведения, тегами, историей.
+
 <p align="center">   
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsTestSuite.jpg" alt="AllureTestOpsTs">
 </p>
+
 Каждый тест-кейс имеет интеграцию с <code>Jira</code>. При клике на линк, мы попадем задачу тест-кейса в <code>Jira</code>.
+
 <p align="center">   
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsIssues.jpg" alt="AllureTestOpsIssues">
 </p>
