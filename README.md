@@ -55,7 +55,8 @@ ____
 <p align="center">  
 <img title="Jenkins" src="src/media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/>
 </p>
-После выполнения сборки, в блоке <code>Build history</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
+*После выполнения сборки, в блоке <code>Build history</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.*
+
 <p align="center">   
 <img title="JenkinsBuild" src="src/media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
 </p>
@@ -87,13 +88,13 @@ ____
 <img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg">
 </p>
 
-Во вкладке <code>Test-cases</code> представлены все существующие тест-кейсы с подробным описанием, шагами воспроизведения, тегами, историей.
+*Во вкладке <code>Test-cases</code> представлены все существующие тест-кейсы с подробным описанием, шагами воспроизведения, тегами, историей.*
 
 <p align="center">   
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsTestSuite.jpg" alt="AllureTestOpsTs">
 </p>
 
-Каждый тест-кейс имеет интеграцию с <code>Jira</code>. При клике на линк, мы попадем на задачу тест-кейса в <code>Jira</code>.
+*Каждый тест-кейс имеет интеграцию с <code>Jira</code>. При клике на линк, мы попадем на задачу тест-кейса в <code>Jira</code>.*
 
 <p align="center">   
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsIssues.jpg" alt="AllureTestOpsIssues">
@@ -115,7 +116,6 @@ ____
 
 ## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
-
 
 <p align="center">
 <img title="Telegram Notifications" src="src/media/screenshots/telegramBotInfo.jpg">
