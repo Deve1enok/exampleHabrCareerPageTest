@@ -9,6 +9,10 @@
 * <a href="#console">Запуск из терминала</a>
 * <a href="#jenkins">Сборка в Jenkins</a>
 * <a href="#allure">Allure отчет</a>
+* <a href="#allureTestOps">Интеграция с AllureTestOps</a>
+* <a href="#jiraTasks">Интеграция c Jira</a>
+* <a href="#telegram">Уведомления в Telegram</a>
+* <a href="#selenoid">Видеозапись запуска тестов в Selenoid</a>
 
 
 ____
@@ -125,7 +129,7 @@ ____
 
 ____
 
-
+<a id="telegram"></a>
 ## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Интеграция тестов с уведомлениями в Telegram при помощи бота.
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
 
@@ -136,7 +140,7 @@ ____
 
 ____
 
-
+<a id="selenoid"></a>
 ## <img title="Selenoid" width="25" height="25" src="src/media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid.
 ### **В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.**
 <p align="center">
