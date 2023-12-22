@@ -80,6 +80,16 @@ ____
 ____
 
 
+<a id="allureTestOps"></a>
+## <img alt="AllureTestOps" height="25" src="src/media/logo/Allure_TO.svg" width="25"/></a><a name="Сборка"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
+### **На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.**
+<p align="center">  
+<img title="Allure Overview Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg" alt="AllureTestOps"/>
+</p>
+
+
+____
+
 ## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
 
