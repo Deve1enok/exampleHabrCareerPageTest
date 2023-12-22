@@ -84,7 +84,7 @@ ____
 ## <img alt="AllureTestOps" height="25" src="src/media/logo/Allure_TO.svg" width="25"/></a><a name="Сборка"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
 ### **На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.**
 <p align="center">  
-<img title="Allure Overview Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg" alt="AllureTestOps"/>
+<img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg" alt="AllureTestOps">
 </p>
 
 
