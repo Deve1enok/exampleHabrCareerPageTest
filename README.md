@@ -32,16 +32,17 @@ ____
 ____
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
-____
 -  *Поиск работы c пустым полем и пустой сортировкой*
 -  *Поиск работы "тестирование" c пустой сортировкой*
 -  *Поиск работы \"тестирование\" с заполнением сортировки*
 -  *Поиск работы c пустым полем и заполненной сортировкой*
 -  *Поиск работы "тестирование" с заполнением сортировки и её сброса*
 
+____
 
 <a id="console"></a>
 ## :keyboard: Запуск автотестов
+
 
 ***Локальный запуск тестов:***
 ```bash  
@@ -74,4 +75,34 @@ ____
 ### **На вкладке <code>Behaviors</code> можно рассмотреть каждый тест-кейс и его шаги воспроизведения, файлы(скриншоты,видео,код и т.п.).**
 <p align="center">  
 <img title="Allure Overview Dashboard" src="src/media/screenshots/allureReportsTK.jpg">  
-</p>  
+</p>
+
+____
+
+
+<a id="allureTestOps"></a>
+## <img alt="AllureTestOps" height="25" src="src/media/logo/Allure_TO.svg" width="25"/></a><a name="Сборка"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
+### **На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.**
+<p align="center">  
+<img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg">
+</p>
+
+
+____
+
+## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
+### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
+
+<p align="center">
+<img title="Telegram Notifications" src="src/media/screenshots/telegramBotInfo.jpg">
+</p>
+
+
+____
+
+
+## <img title="Selenoid" width="25" height="25" src="src/media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid.
+### **В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.**
+<p align="center">
+<img title="Selenoid Video" src="src/media/screenshots/videoTestHabrCareer.gif">
+</p>
