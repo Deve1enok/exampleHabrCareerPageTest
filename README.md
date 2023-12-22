@@ -53,11 +53,11 @@ ____
 ## <img alt="Jenkins" height="25" src="src/media/logo/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/)</a>
 ### **Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/></a>
+<img title="Jenkins" src="src/media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/></a>
 </p>
 После выполнения сборки, в блоке <code>Build history</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 <p align="center">   
-<a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
+<img title="JenkinsBuild" src="src/media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
 </p>
 
 ____
@@ -84,7 +84,7 @@ ____
 ## <img alt="AllureTestOps" height="25" src="src/media/logo/Allure_TO.svg" width="25"/></a><a name="Сборка"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
 ### **На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.**
 <p align="center">  
-<img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg"/>
+<img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg">
 </p>
 
 
