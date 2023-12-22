@@ -126,7 +126,7 @@ ____
 ____
 
 
-## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
+## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Интеграция тестов с уведомлениями в Telegram при помощи бота.
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
 
 <p align="center">
