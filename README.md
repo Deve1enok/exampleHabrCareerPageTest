@@ -93,7 +93,7 @@ ____
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsTestSuite.jpg" alt="AllureTestOpsTs">
 </p>
 
-Каждый тест-кейс имеет интеграцию с <code>Jira</code>. При клике на линк, мы попадем задачу тест-кейса в <code>Jira</code>.
+Каждый тест-кейс имеет интеграцию с <code>Jira</code>. При клике на линк, мы попадем на задачу тест-кейса в <code>Jira</code>.
 
 <p align="center">   
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsIssues.jpg" alt="AllureTestOpsIssues">
@@ -115,6 +115,7 @@ ____
 
 ## <img title="Telegram" width="25" height="25" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
+
 
 <p align="center">
 <img title="Telegram Notifications" src="src/media/screenshots/telegramBotInfo.jpg">
