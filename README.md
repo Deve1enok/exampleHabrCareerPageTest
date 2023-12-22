@@ -53,11 +53,11 @@ ____
 ## <img alt="Jenkins" height="25" src="src/media/logo/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/)</a>
 ### **Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/></a>
+<img title="Jenkins" src="src/media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/></a>
 </p>
 После выполнения сборки, в блоке <code>Build history</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 <p align="center">   
-<a href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/"><img src="src/media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
+<img title="JenkinsBuild" src="src/media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
 </p>
 
 ____
