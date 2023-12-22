@@ -56,6 +56,8 @@ ____
 ***Локальный запуск тестов:***
 ```bash  
 gradle clean test_suite
+gradle clean positive_tests
+gradle clean negative_tests
 ```
 ____
 <a id="jenkins"></a>
