@@ -26,7 +26,8 @@ ____
 <a href="https://github.com/"><img width="6%" title="GitHub" src="src/media/logo/github-original-wordmark.svg"></a>
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="src/media/logo/jenkins-original.svg"></a>
 <a href="https://web.telegram.org/a/"><img width="6%" title="Telegram" src="src/media/logo/Telegram.svg"></a>
-<!-- <a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="src/media/logo/Jira.svg"></a> -->
+<a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="src/media/logo/Jira.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="src/media/logo/JUnit5.svg"></a>
 </p>
 
 ____
@@ -86,11 +87,11 @@ ____
 <p align="center">  
 <img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg">
 </p>
-Во вкладке `Test-cases` представлены все существующие тест-кейсы с подробным описанием, шагами воспроизведения, тегами, историей.
+Во вкладке <code>Test-cases</code> представлены все существующие тест-кейсы с подробным описанием, шагами воспроизведения, тегами, историей.
 <p align="center">   
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsTestSuite.jpg" alt="AllureTestOpsTs">
 </p>
-Каждый тест-кейс имеет интеграцию с `Jira`. При клике на линк, мы попадем задачу тест-кейса в `Jira`.
+Каждый тест-кейс имеет интеграцию с <code>Jira</code>. При клике на линк, мы попадем задачу тест-кейса в <code>Jira</code>.
 <p align="center">   
 <img title="AllureTestOpsTS" src="src/media/screenshots/allureTestOpsIssues.jpg" alt="AllureTestOpsIssues">
 </p>
