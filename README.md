@@ -1,7 +1,7 @@
 
 # Проект по автоматизации тестирования для [ХабрКарьера](https://career.habr.com/)
 
-<img alt="habrCareer" src="media/screenshots/habrCareerMainPage.jpg">
+<img alt="habrCareer" src="src/media/screenshots/habrCareerMainPage.jpg">
 
 
 ## :clipboard: Содержание:
@@ -17,15 +17,15 @@ ____
 ## :computer:<a name="Используемый стек">**Используемый стек:**</a>
 
 <p align="center">
-<a href="https://www.java.com/"><img width="6%" title="Java" src="media/logo/java-original.svg"></a>
-<a href="https://selenide.org/"><img width="6%" title="Selenide" src="media/logo/Selenide.svg"></a>
-<a href="https://aerokube.com/selenoid/"><img width="6%" title="Selenoid" src="media/logo/Selenoid.svg"></a>
-<a href="https://github.com/allure-framework/allure2"><img width="6%" title="Allure Report" src="media/logo/Allure.svg"></a>
-<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/logo/Allure_TO.svg"></a>
-<a href="https://gradle.org/"><img width="6%" title="Gradle" src="media/logo/gradle-plain-wordmark.svg"></a>
-<a href="https://github.com/"><img width="6%" title="GitHub" src="media/logo/github-original-wordmark.svg"></a>
-<a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/logo/jenkins-original.svg"></a>
-<a href="https://web.telegram.org/a/"><img width="6%" title="Telegram" src="media/logo/Telegram.svg"></a>
+<a href="https://www.java.com/"><img width="6%" title="Java" src="src/media/logo/java-original.svg"></a>
+<a href="https://selenide.org/"><img width="6%" title="Selenide" src="src/media/logo/Selenide.svg"></a>
+<a href="https://aerokube.com/selenoid/"><img width="6%" title="Selenoid" src="src/media/logo/Selenoid.svg"></a>
+<a href="https://github.com/allure-framework/allure2"><img width="6%" title="Allure Report" src="src/media/logo/Allure.svg"></a>
+<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="src/media/logo/Allure_TO.svg"></a>
+<a href="https://gradle.org/"><img width="6%" title="Gradle" src="src/media/logo/gradle-plain-wordmark.svg"></a>
+<a href="https://github.com/"><img width="6%" title="GitHub" src="src/media/logo/github-original-wordmark.svg"></a>
+<a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="src/media/logo/jenkins-original.svg"></a>
+<a href="https://web.telegram.org/a/"><img width="6%" title="Telegram" src="src/media/logo/Telegram.svg"></a>
 <!-- <a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="src/media/logo/Jira.svg"></a> -->
 </p>
 
@@ -53,11 +53,11 @@ ____
 ## <img alt="Jenkins" height="25" src="src/media/logo/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/)</a>
 ### **Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
 <p align="center">  
-<img title="Jenkins" src="media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/></a>
+<img title="Jenkins" src="src/media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/></a>
 </p>
 После выполнения сборки, в блоке <code>Build history</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 <p align="center">   
-<img title="JenkinsBuild" src="media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
+<img title="JenkinsBuild" src="src/media/screenshots/historyJenkins.jpg" alt="Jenkins"/></a>
 </p>
 
 ____
@@ -68,13 +68,13 @@ ____
 ## *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screenshots/allureReportMain.jpg">  
+<img title="Allure Overview Dashboard" src="src/media/screenshots/allureReportMain.jpg">  
 </p>  
 
 ## *Подробный отчёт одного из тест-кейсов*
 ### **На вкладке <code>Behaviors</code> можно рассмотреть каждый тест-кейс и его шаги воспроизведения, файлы(скриншоты,видео,код и т.п.).**
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/screenshots/allureReportsTK.jpg">  
+<img title="Allure Overview Dashboard" src="src/media/screenshots/allureReportsTK.jpg">  
 </p>
 
 ____
@@ -84,7 +84,7 @@ ____
 ## <img alt="AllureTestOps" height="25" src="src/media/logo/Allure_TO.svg" width="25"/></a><a name="Сборка"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
 ### **На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.**
 <p align="center">  
-<img title="AllureTestOps Dashboard" src="media/screenshots/allureTestOpsDashBoard.jpg">
+<img title="AllureTestOps Dashboard" src="src/media/screenshots/allureTestOpsDashBoard.jpg">
 </p>
 
 
@@ -94,7 +94,7 @@ ____
 ### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
 
 <p align="center">
-<img title="Telegram Notifications" src="media/screenshots/telegramBotInfo.jpg">
+<img title="Telegram Notifications" src="src/media/screenshots/telegramBotInfo.jpg">
 </p>
 
 
@@ -104,5 +104,5 @@ ____
 ## <img title="Selenoid" width="25" height="25" src="src/media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid.
 ### **В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.**
 <p align="center">
-<img title="Selenoid Video" src="media/screenshots/videoTestHabrCareer.gif">
+<img title="Selenoid Video" src="src/media/screenshots/videoTestHabrCareer.gif">
 </p>
