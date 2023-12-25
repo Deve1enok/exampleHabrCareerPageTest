@@ -78,7 +78,7 @@ ____
 ____
 
 <a id="allure"></a>
-## <img src="media/logo/Allure.svg" height= "40" width="40"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
+## <img src="media/logo/Allure.svg" height= "25" width="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
 
 ## *Основная страница отчёта*
 
@@ -96,7 +96,7 @@ ____
 
 
 <a id="allureTestOps"></a>
-## <img alt="AllureTestOps" height="25" src="media/logo/Allure_TO.svg" width="25"/></a><a name="Интеграция AllureTO"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
+## <img alt="AllureTestOps" src="media/logo/Allure_TO.svg" height= "25" width="25" /><a name="Интеграция AllureTO"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
 ### **На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.**
 <p align="center">  
 <img title="AllureTestOps Dashboard" src="media/screenshots/allureTestOpsDashBoard.jpg">
