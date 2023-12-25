@@ -9,6 +9,10 @@
 * <a href="#console">Запуск из терминала</a>
 * <a href="#jenkins">Сборка в Jenkins</a>
 * <a href="#allure">Allure отчет</a>
+* <a href="#allure">Интеграция с AllureTestOps</a>
+* <a href="#allure">Интеграция с Jira</a>
+* <a href="#allure">Интеграция с Telegram ботом</a>
+* <a href="#allure">Видеозапись тестов с Selenoid</a>
 
 
 ____
