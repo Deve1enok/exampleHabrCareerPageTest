@@ -16,18 +16,18 @@ ____
 ## :computer:<a name="Используемый стек">**Используемый стек:**</a>
 
 <p align="center">
-<a href="https://www.java.com/"><img width="6%" title="Java" src="media/logo/java-original.svg"></a>
-<a href="https://selenide.org/"><img width="6%" title="Selenide" src="media/logo/Selenide.svg"></a>
-<a href="https://aerokube.com/selenoid/"><img width="6%" title="Selenoid" src="media/logo/Selenoid.svg"></a>
-<a href="https://github.com/allure-framework/allure2"><img width="6%" title="Allure Report" src="media/logo/Allure.svg"></a>
-<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/logo/Allure_TO.svg"></a>
-<a href="https://gradle.org/"><img width="6%" title="Gradle" src="media/logo/gradle-plain-wordmark.svg"></a>
-<a href="https://github.com/"><img width="6%" title="GitHub" src="media/logo/github-original-wordmark.svg"></a>
-<a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/logo/jenkins-original.svg"></a>
-<a href="https://web.telegram.org/a/"><img width="6%" title="Telegram" src="media/logo/Telegram.svg"></a>
-<a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="media/logo/Jira.svg"></a>
-<a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="media/logo/JUnit5.svg"></a>
-<a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="media/logo/Idea.svg"></a>
+<a href="https://www.java.com/"><img height= "40" width="40" title="Java" src="media/logo/java-original.svg"></a>
+<a href="https://selenide.org/"><img height= "40" width="40" title="Selenide" src="media/logo/Selenide.svg"></a>
+<a href="https://aerokube.com/selenoid/"><img height= "40" width="40" title="Selenoid" src="media/logo/Selenoid.svg"></a>
+<a href="https://github.com/allure-framework/allure2"><img height= "40" width="40" title="Allure Report" src="media/logo/Allure.svg"></a>
+<a href="https://qameta.io/"><img height= "40" width="40" title="Allure TestOps" src="media/logo/Allure_TO.svg"></a>
+<a href="https://gradle.org/"><img height= "40" width="40" title="Gradle" src="media/logo/gradle-plain-wordmark.svg"></a>
+<a href="https://github.com/"><img height= "40" width="40" title="GitHub" src="media/logo/github-original-wordmark.svg"></a>
+<a href="https://www.jenkins.io/"><img height= "40" width="40" title="Jenkins" src="media/logo/jenkins-original.svg"></a>
+<a href="https://web.telegram.org/a/"><img height= "40" width="40" title="Telegram" src="media/logo/Telegram.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img height= "40" width="40" title="Jira" src="media/logo/Jira.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img height= "40" width="40" title="Jira" src="media/logo/JUnit5.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img height= "40" width="40" title="Jira" src="media/logo/Idea.svg"></a>
 
 </p>
 
