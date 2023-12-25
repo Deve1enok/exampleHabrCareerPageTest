@@ -12,7 +12,7 @@
 * <a href="#allureTestOps">Интеграция с AllureTestOps</a>
 * <a href="#jira">Интеграция с Jira</a>
 * <a href="#telegram">Интеграция с Telegram ботом</a>
-* <a href="#allure">Видеозапись тестов с Selenoid</a>
+* <a href="#selenoid">Видеозапись тестов с Selenoid</a>
 
 
 ____
