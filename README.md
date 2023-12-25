@@ -78,7 +78,7 @@ ____
 ____
 
 <a id="allure"></a>
-## <img src="media/logo/Allure.svg" height= "25" width="25"  alt="Allure"/></a> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
+## <img src="media/logo/Allure.svg" height= "25" width="25"  alt="Allure"/> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
 
 ## *Основная страница отчёта*
 
@@ -119,7 +119,7 @@ ____
 
 
 <a id="jiraTasks"></a>
-## <img alt="jiraTask" height="25" src="media/logo/Jira.svg" width="25"/></a><a name="Интеграция Jira"></a>Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1010)</a>
+## <img alt="jiraTask" src="media/logo/Jira.svg" height= "25" width="25"/><a name="Интеграция Jira"></a>Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1010)</a>
 ### **Реализована интеграция `Allure TestOps` с `Jira`, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.**
 <p align="center">  
 <img title="Jira Tasks" src="media/screenshots/jiraMainTask.jpg">
