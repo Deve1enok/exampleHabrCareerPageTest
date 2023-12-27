@@ -47,7 +47,7 @@ public class HabrCareerPage {
         executeJavaScript("$('footer').remove()");
         return this;
     }
-    @Step("Ввести в поле поиска {value}")
+    @Step("Ввести в поле поиска пустое значение")
     public HabrCareerPage setSearchTesting(String value) {
         searchCareerInput.setValue(value);
         searchCareerSubmit.click();

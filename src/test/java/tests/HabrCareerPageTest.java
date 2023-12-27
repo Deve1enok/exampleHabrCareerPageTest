@@ -115,8 +115,6 @@ public class HabrCareerPageTest extends BaseTest {
                 .checkResetCurrency(dataCareerPage.defaultTypeSalary)
                 .checkResetLocation()
                 .checkResetTypeWork(dataCareerPage.defaultTypeWork)
-                .checkColorBoxRemotelyAfterReset()
-                .checkColorBoxITCompanyAfterReset()
                 .checkBoxSalary()
                 .checkColorBoxRemotelyAfterReset()
                 .checkColorBoxITCompanyAfterReset();
