@@ -146,5 +146,5 @@ ____
 ## <img title="Selenoid" width="25" height="25" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid.
 ### **В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.**
 <p align="center">
-<img title="Selenoid Video" src="media/screenshots/videoTestHabrCareer.gif">
+<img title="Selenoid Video" src="media/screenshots/videoTestHabr.gif">
 </p>
