@@ -126,7 +126,7 @@ ____
 ## <img alt="jiraTask" src="media/logo/Jira.svg" height= "25" width="25"/><a name="Интеграция Jira"></a>Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1010)</a>
 ### **Реализована интеграция `Allure TestOps` с `Jira`, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.**
 <p align="center">  
-<img title="Jira Tasks" src="media/screenshots/jiraMainTask.jpg">
+<img title="Jira Tasks" src="media/screenshots/jiraTask.jpg">
 </p>
 
 ____
