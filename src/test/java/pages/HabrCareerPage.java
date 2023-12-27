@@ -65,7 +65,7 @@ public class HabrCareerPage {
         buttonApplyChoiceSpecialization.click();
         return this;
     }
-    @Step("Выбрать квалификацию {qualification}")
+    @Step("Выбрать квалификацию")
     public HabrCareerPage choiceQualification(String qualification) {
         qualificationField.selectOptionByValue(qualification);
         return this;
@@ -82,12 +82,12 @@ public class HabrCareerPage {
         salaryField.setValue(valueOf(salaryOptions));
         return this;
     }
-    @Step("Выбрать тип валюты зарплаты")
+    @Step("Выбрать тип валюты зарплаты {currency}")
     public HabrCareerPage choiceTypeSalary(String currency) {
         currencyList.selectOptionByValue(currency);
         return this;
     }
-    @Step("Выбрать местоположение {value}")
+    @Step("Выбрать местоположение {location}")
     public HabrCareerPage setLocation(String location) {
         locationField.click();
         locationField.setValue(location);
