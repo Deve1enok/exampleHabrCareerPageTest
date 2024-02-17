@@ -24,6 +24,13 @@ public class HabrCareerPageTest extends BaseTest {
     DataTypeWorkCareerPage dataFakerTypeWork = new DataTypeWorkCareerPage();
     DataCurrencySalaryCareerPage dataFakerCurrency = new DataCurrencySalaryCareerPage();
     DataSearchValueCareerPage dataFakerSearchValue = new DataSearchValueCareerPage();
+    DataCompanyPage dataCompanyValue = new DataCompanyPage();
+    DataUniversityPage dataUniversityValue = new DataUniversityPage();
+    DataOnlineSchoolPage dataOnlineSchoolValue = new DataOnlineSchoolPage();
+    DataReadyToWorkPage dataReadyToWorkValue = new DataReadyToWorkPage();
+    DataActivityOnSitePage dataActivityOnSiteValue = new DataActivityOnSitePage();
+    DataExtraPage dataExtraSet = new DataExtraPage();
+
 
 
     @Test
@@ -83,7 +90,7 @@ public class HabrCareerPageTest extends BaseTest {
                 .checkResultsEmployment(dataFakerTypeWork.typeWorkOptions)
                 .checkBoxWork()
                 .checkBoxCompany()
-                .checkBoxSalary();
+                .checkColorBoxSalary();
     }
     @Test
     @Tag("positive_test")
@@ -114,8 +121,9 @@ public class HabrCareerPageTest extends BaseTest {
                 .checkResetSalary()
                 .checkResetCurrency(dataCareerPage.defaultTypeSalary)
                 .checkResetLocation()
+                .checkResultsEmployment(dataFakerTypeWork.typeWorkOptions)
                 .checkResetTypeWork(dataCareerPage.defaultTypeWork)
-                .checkBoxSalary()
+                .checkColorBoxSalary()
                 .checkColorBoxRemotelyAfterReset()
                 .checkColorBoxITCompanyAfterReset();
     }
@@ -150,6 +158,154 @@ public class HabrCareerPageTest extends BaseTest {
                 .checkResultsEmployment(dataFakerTypeWork.typeWorkOptions)
                 .checkBoxWork()
                 .checkBoxCompany()
-                .checkBoxSalary();
+                .checkColorBoxSalary();
+    }
+    @Test
+    @Tag("positive_test")
+    @DisplayName("Поиск специалистов с заполнением поля поиска и сортировки")
+    @Story("Позитивные тесты")
+    void searchCareerFormEmployerFullSorting () {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        habrCareerPage.openCareerPage(dataCareerPage.openPage)
+                .disableBanner()
+                .choiceEmployerButton()
+                .setSearchTesting(dataFakerSearchValue.searchValueOptions)
+                .choiceFirstSpecialization(dataFakerSpecialization.specializationOptions)
+                .choiceSecondSpecialization(dataFakerSpecialization.getSpecializationOption)
+                .choiceQualification(dataFakerQualification.qualificationOptions)
+                .choiceProfessionalSkills(dataFakerSkills.profSkillsOptions)
+                .setPayment(dataFakerSalary.salaryOptions)
+                .choiceTypeSalary(dataFakerCurrency.currencySalaryOptions)
+                .setLocation(dataFakerLocation.locationOptions)
+                .choiceCompany(dataCompanyValue.companyOptions)
+                .setCheckBoxCompany()
+                .setUniversity(dataUniversityValue.universityOptions)
+                .setOnlineSchool(dataOnlineSchoolValue.schoolOptions)
+                .setCheckBoxReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
+                .setCheckBoxMoveWork()
+                .setCheckBoxRemoteWork()
+                .choiceActivityOnSite(dataActivityOnSiteValue.activityValue)
+                .setExtraBoxAndCheckColorBoxAfterSet(dataExtraSet.randomNum)
+
+                .checkSearchField(dataFakerSearchValue.searchValueOptions)
+                .checkResultsSpecialization(dataFakerSpecialization.getSpecializationOption)
+                .checkResultsQualification(dataFakerQualification.qualificationOptions)
+                .checkResetProfessionalSkills()
+                .checkResultsPayment(dataFakerSalary.salaryOptions)
+                .checkResultsCurrency(dataFakerCurrency.currencySalaryOptions)
+                .checkResultsLocation(dataFakerLocation.locationOptions)
+
+                .checkReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
+                .checkCSSBoxReadyMoveWork()
+                .checkCSSBoxReadyRemoteWork();
+    }
+    @Test
+    @Tag("positive_test")
+    @DisplayName("Поиск специалистов c пустым полем поиска и сортировкой")
+    @Story("Позитивные тесты")
+    void searchCareerFormEmployerEmptyShouldHaveWorkPage () {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        habrCareerPage.openCareerPage(dataCareerPage.openPage)
+                .disableBanner()
+                .choiceEmployerButton()
+                .setSearchTesting(dataCareerPage.searchValueEmpty)
+
+                .checkSearchField(dataCareerPage.searchValueEmpty);
+    }
+    @Test
+    @Tag("positive_test")
+    @DisplayName("Поиск специалистов c пустым полем поиска и сортировкой")
+    @Story("Позитивные тесты")
+    void searchCareerFormEmployerShouldHaveTestingPage () {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        habrCareerPage.openCareerPage(dataCareerPage.openPage)
+                .disableBanner()
+                .choiceEmployerButton()
+                .setSearchTesting(dataFakerSearchValue.searchValueOptions)
+
+                .checkSearchField(dataFakerSearchValue.searchValueOptions);
+    }
+    @Test
+    @Tag("positive_test")
+    @DisplayName("Поиск специалистов с заполнением поля поиска и сортировки с последующим сбросом сортировки")
+    @Story("Позитивные тесты")
+    void searchCareerFormEmployerFullSortingShouldBeReset () {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        habrCareerPage.openCareerPage(dataCareerPage.openPage)
+                .disableBanner()
+                .choiceEmployerButton()
+                .setSearchTesting(dataFakerSearchValue.searchValueOptions)
+                .choiceFirstSpecialization(dataFakerSpecialization.specializationOptions)
+                .choiceSecondSpecialization(dataFakerSpecialization.getSpecializationOption)
+                .choiceQualification(dataFakerQualification.qualificationOptions)
+                .choiceProfessionalSkills(dataFakerSkills.profSkillsOptions)
+                .setPayment(dataFakerSalary.salaryOptions)
+                .choiceTypeSalary(dataFakerCurrency.currencySalaryOptions)
+                .setLocation(dataFakerLocation.locationOptions)
+                .choiceCompany(dataCompanyValue.companyOptions)
+                .setCheckBoxCompany()
+                .setUniversity(dataUniversityValue.universityOptions)
+                .setOnlineSchool(dataOnlineSchoolValue.schoolOptions)
+                .setCheckBoxReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
+                .setCheckBoxMoveWork()
+                .setCheckBoxRemoteWork()
+                .choiceActivityOnSite(dataActivityOnSiteValue.activityValue)
+                .setExtraBoxAndCheckColorBoxAfterSet(dataExtraSet.randomNum)
+                .resetCareerSorting()
+
+                .checkSearchField(dataFakerSearchValue.searchValueOptions)
+                .checkResetSpecialization(dataCareerPage.defaultSpecializationField)
+                .checkResetQualification(dataCareerPage.defaultQualificationField)
+                .checkResetProfessionalSkills()
+                .checkResultsPaymentAfterReset(dataCareerPage.defaultSalaryField)
+                .checkResetCurrency(dataCareerPage.defaultTypeSalary)
+                .checkResetLocation()
+                .checkReadyToWork(dataCareerPage.defaultReadyToWork)
+                .checkCSSBoxReadyMoveWork()
+                .checkCSSBoxReadyRemoteWork();
+    }
+    @Test
+    @Tag("positive_test")
+    @DisplayName("Поиск специалистов c пустым полем и заполненной сортировкой")
+    @Story("Позитивные тесты")
+    void searchCareerFormEmployerEmptyShouldHaveFullSorting () {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        habrCareerPage.openCareerPage(dataCareerPage.openPage)
+                .disableBanner()
+                .choiceEmployerButton()
+                .setSearchTesting(dataCareerPage.searchValueEmpty)
+                .choiceFirstSpecialization(dataFakerSpecialization.specializationOptions)
+                .choiceSecondSpecialization(dataFakerSpecialization.getSpecializationOption)
+                .choiceQualification(dataFakerQualification.qualificationOptions)
+                .choiceProfessionalSkills(dataFakerSkills.profSkillsOptions)
+                .setPayment(dataFakerSalary.salaryOptions)
+                .choiceTypeSalary(dataFakerCurrency.currencySalaryOptions)
+                .setLocation(dataFakerLocation.locationOptions)
+                .choiceCompany(dataCompanyValue.companyOptions)
+                .setCheckBoxCompany()
+                .setUniversity(dataUniversityValue.universityOptions)
+                .setOnlineSchool(dataOnlineSchoolValue.schoolOptions)
+                .setCheckBoxReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
+                .setCheckBoxMoveWork()
+                .setCheckBoxRemoteWork()
+                .choiceActivityOnSite(dataActivityOnSiteValue.activityValue)
+                .setExtraBoxAndCheckColorBoxAfterSet(dataExtraSet.randomNum)
+
+                .checkSearchField(dataCareerPage.searchValueEmpty)
+                .checkResultsSpecialization(dataFakerSpecialization.getSpecializationOption)
+                .checkResultsQualification(dataFakerQualification.qualificationOptions)
+                .checkResetProfessionalSkills()
+                .checkResultsPayment(dataFakerSalary.salaryOptions)
+                .checkResultsCurrency(dataFakerCurrency.currencySalaryOptions)
+                .checkResultsLocation(dataFakerLocation.locationOptions)
+
+                .checkReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
+                .checkCSSBoxReadyMoveWork()
+                .checkCSSBoxReadyRemoteWork();
     }
 }
