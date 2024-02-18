@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
@@ -12,7 +13,7 @@ import pages.HabrCareerPage;
 import utils.*;
 
 @Tag("habrCareerTests")
-@Feature("Форма поиска habrCareer")
+@Epic("Форма поиска habrCareer")
 @DisplayName("Заполнение формы поиска работы")
 public class HabrCareerPageTest extends BaseTest {
     HabrCareerPage habrCareerPage = new HabrCareerPage();
@@ -218,7 +219,7 @@ public class HabrCareerPageTest extends BaseTest {
     @Owner("Fazlyakhemtov D.A.")
     @Feature("Форма поиска специалистов habrCareer")
     @DisplayName("Поиск специалистов c пустым полем поиска и сортировкой")
-    @Story("Позитивные тесты")
+    @Story("Негативные тесты")
     void searchCareerFormEmployerEmptyShouldHaveWorkPage () {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -292,7 +293,7 @@ public class HabrCareerPageTest extends BaseTest {
     @Owner("Fazlyakhemtov D.A.")
     @Feature("Форма поиска специалистов habrCareer")
     @DisplayName("Поиск специалистов c пустым полем и заполненной сортировкой")
-    @Story("Позитивные тесты")
+    @Story("Негативные тесты")
     void searchCareerFormEmployerEmptyShouldHaveFullSorting () {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
