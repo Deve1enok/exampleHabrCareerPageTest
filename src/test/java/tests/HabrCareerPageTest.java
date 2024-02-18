@@ -2,6 +2,7 @@ package tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +12,7 @@ import pages.HabrCareerPage;
 import utils.*;
 
 @Tag("habrCareerTests")
-@Feature("Форма поиска работы habrCareer")
+@Feature("Форма поиска habrCareer")
 @DisplayName("Заполнение формы поиска работы")
 public class HabrCareerPageTest extends BaseTest {
     HabrCareerPage habrCareerPage = new HabrCareerPage();
@@ -35,6 +36,8 @@ public class HabrCareerPageTest extends BaseTest {
 
     @Test
     @Tag("positive_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска работы habrCareer")
     @DisplayName("Поиск работы с заполнением поля поиска и пустой сортировкой")
     @Story("Позитивные тесты")
     void searchCareerFormShouldHaveTestingPage () {
@@ -48,6 +51,8 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("negative_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска работы habrCareer")
     @DisplayName("Поиск работы c пустым полем поиска и сортировкой")
     @Story("Негативные тесты")
     void searchCareerFormEmptyShouldHaveWorkPage () {
@@ -61,6 +66,8 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска работы habrCareer")
     @DisplayName("Поиск работы с заполнением поля поиска и сортировки")
     @Story("Позитивные тесты")
     void searchCareerFormShouldHaveFullSorting () {
@@ -94,6 +101,8 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска работы habrCareer")
     @DisplayName("Поиск работы с заполнением поля поиска и сортировки с последующим сбросом сортировки")
     @Story("Позитивные тесты")
     void searchCareerFormFullSortingShouldBeReset () {
@@ -129,6 +138,8 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска работы habrCareer")
     @DisplayName("Поиск работы c пустым полем и заполненной сортировкой")
     @Story("Негативные тесты")
     void searchCareerFormEmptyShouldHaveFullSorting () {
@@ -162,6 +173,8 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска специалистов habrCareer")
     @DisplayName("Поиск специалистов с заполнением поля поиска и сортировки")
     @Story("Позитивные тесты")
     void searchCareerFormEmployerFullSorting () {
@@ -201,7 +214,9 @@ public class HabrCareerPageTest extends BaseTest {
                 .checkCSSBoxReadyRemoteWork();
     }
     @Test
-    @Tag("positive_test")
+    @Tag("negative_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска специалистов habrCareer")
     @DisplayName("Поиск специалистов c пустым полем поиска и сортировкой")
     @Story("Позитивные тесты")
     void searchCareerFormEmployerEmptyShouldHaveWorkPage () {
@@ -216,7 +231,9 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
-    @DisplayName("Поиск специалистов c пустым полем поиска и сортировкой")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска специалистов habrCareer")
+    @DisplayName("Поиск специалистов с заполнением поля поиска и пустой сортировкой")
     @Story("Позитивные тесты")
     void searchCareerFormEmployerShouldHaveTestingPage () {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -230,6 +247,8 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска специалистов habrCareer")
     @DisplayName("Поиск специалистов с заполнением поля поиска и сортировки с последующим сбросом сортировки")
     @Story("Позитивные тесты")
     void searchCareerFormEmployerFullSortingShouldBeReset () {
@@ -270,6 +289,8 @@ public class HabrCareerPageTest extends BaseTest {
     }
     @Test
     @Tag("positive_test")
+    @Owner("Fazlyakhemtov D.A.")
+    @Feature("Форма поиска специалистов habrCareer")
     @DisplayName("Поиск специалистов c пустым полем и заполненной сортировкой")
     @Story("Позитивные тесты")
     void searchCareerFormEmployerEmptyShouldHaveFullSorting () {
