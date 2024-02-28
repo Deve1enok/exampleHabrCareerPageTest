@@ -12,25 +12,31 @@ public class HabrCareerSorting {
     private final SelenideElement boxReadyForMoveWork = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 5);
     private final SelenideElement boxReadyForRemoteWork = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 6);
 
-    public void checkBoxWorkRemotely() {
+    public void checkboxWorkRemotely() {
         boxTypeWork.shouldHave(cssValue("border-color", "rgb(102, 102, 102)"));
     }
-    public void checkBoxITCompany() {
+
+    public void checkboxITCompany() {
         boxTypeCompany.shouldHave(cssValue("border-color", "rgb(102, 102, 102)"));
     }
-    public void checkBoxTypeSalary() {
+
+    public void checkboxTypeSalary() {
         boxTypeSalary.shouldHave(cssValue("border-color", "rgba(0, 0, 0, 0)"));
     }
+
     public void checkDefaultColorBoxRemotely() {
         boxTypeSalary.shouldHave(cssValue("border-color", "rgba(0, 0, 0, 0)"));
     }
+
     public void checkDefaultColorBoxITCompany() {
         boxTypeSalary.shouldHave(cssValue("border-color", "rgba(0, 0, 0, 0)"));
     }
+
     public void checkActivityBoxReadyMoveWork() {
         boxReadyForMoveWork.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
         boxReadyForMoveWork.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
     }
+
     public void checkActivityBoxReadyRemoteWork() {
         boxReadyForRemoteWork.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
         boxReadyForRemoteWork.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));

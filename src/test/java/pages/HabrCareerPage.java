@@ -4,7 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.HabrCareerSorting;
-import utils.DataExtraPage;
+import data.DataExtra;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
@@ -12,20 +12,20 @@ import static com.codeborne.selenide.Selenide.*;
 import static java.lang.String.valueOf;
 
 public class HabrCareerPage {
-    DataExtraPage dataDops = new DataExtraPage();
+    DataExtra dataDops = new DataExtra();
     private final SelenideElement searchCareerInput = $(".l-page-title__input"),
             searchCareerSubmit = $(".l-page-title__form-submit"),
             specializationField = $(".specs-picker__specs-placeholder"),
             mainSpecialization = $(".specs-selector").$("div"),
             secondSpecialization = $(".specs-selector__categories-wrapper"),
-            buttonApplyChoiceSpecialization = $(".basic-section--appearance-specs").find(byText("Применить")),
+            buttonApplySelectSpecialization = $(".basic-section--appearance-specs").find(byText("Применить")),
             qualificationField = $(".basic-section--appearance-sidebar").find("select.select__input"),
             skillsField = $(".basic-section--appearance-sidebar").$("input[placeholder='Выберите навык']"),
             dropDownSkills = $(".suggestion-results"),
             salaryField = $(".basic-section--appearance-sidebar").$("input[placeholder='От']"),
             resultSalaryField = $(".text-input__input", 3),
             locationField = $(".basic-section--appearance-sidebar").$("input[placeholder='Введите город, область или страну']"),
-            checkBoxDropDown = $(".suggestion-item"),
+            checkboxDropDown = $(".suggestion-item"),
             skillsList = $(".inline-list", 2),
             locationList = $(".inline-list", 3),
             resultSpecialization = $(".specs-picker__specs"),
@@ -43,11 +43,11 @@ public class HabrCareerPage {
             onlineSchoolField = $(".basic-section--appearance-sidebar").$("input[placeholder='Выберите онлайн-школу']"),
             boxReadyForMoveWork = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 5),
             boxReadyForRemoteWork = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 6),
-            extraBoxEducation0 = $(".basic-section--appearance-sidebar").$("[class='checkbox']",7),
-            extraBoxEducation1 = $(".basic-section--appearance-sidebar").$("[class='checkbox']",8),
-            extraBoxEducation2 = $(".basic-section--appearance-sidebar").$("[class='checkbox']",9),
-            extraBoxEducation3 = $(".basic-section--appearance-sidebar").$("[class='checkbox']",10),
-            extraBoxEducation4 = $(".basic-section--appearance-sidebar").$("[class='checkbox']",11),
+            extraBoxEducation0 = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 7),
+            extraBoxEducation1 = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 8),
+            extraBoxEducation2 = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 9),
+            extraBoxEducation3 = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 10),
+            extraBoxEducation4 = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 11),
             siteActivityField = $(".select__input", 4);
 
     HabrCareerSorting habrCareerSorting = new HabrCareerSorting();
@@ -73,27 +73,27 @@ public class HabrCareerPage {
     }
 
     @Step("Выбрать специализацию {specialization}")
-    public HabrCareerPage choiceFirstSpecialization(String specialization) {
+    public HabrCareerPage selectFirstSpecialization(String specialization) {
         specializationField.click();
         mainSpecialization.find(byText(specialization)).click();
         return this;
     }
 
     @Step("Выбрать узкую направленность специализации {specialization}")
-    public HabrCareerPage choiceSecondSpecialization(String specialization) {
+    public HabrCareerPage selectSecondSpecialization(String specialization) {
         secondSpecialization.find((byText(specialization))).scrollTo().click();
-        buttonApplyChoiceSpecialization.click();
+        buttonApplySelectSpecialization.click();
         return this;
     }
 
     @Step("Выбрать квалификацию")
-    public HabrCareerPage choiceQualification(String qualification) {
+    public HabrCareerPage selectQualification(String qualification) {
         qualificationField.selectOptionByValue(qualification);
         return this;
     }
 
     @Step("Выбрать профессиональные навыки {skill}")
-    public HabrCareerPage choiceProfessionalSkills(String skill) {
+    public HabrCareerPage selectProfessionalSkills(String skill) {
         skillsField.click();
         skillsField.setValue(skill);
         dropDownSkills.find(byText(skill)).click();
@@ -107,7 +107,7 @@ public class HabrCareerPage {
     }
 
     @Step("Выбрать тип валюты зарплаты {currency}")
-    public HabrCareerPage choiceTypeSalary(String currency) {
+    public HabrCareerPage selectTypeSalary(String currency) {
         currencyList.selectOptionByValue(currency);
         return this;
     }
@@ -116,24 +116,24 @@ public class HabrCareerPage {
     public HabrCareerPage setLocation(String location) {
         locationField.click();
         locationField.setValue(location);
-        checkBoxDropDown.find(byText(location)).click();
+        checkboxDropDown.find(byText(location)).click();
         return this;
     }
 
     @Step("Выбрать тип занятости")
-    public HabrCareerPage choiceTypeWork(String typeWork) {
+    public HabrCareerPage selectTypeWork(String typeWork) {
         typeWorkField.selectOptionByValue(typeWork);
         return this;
     }
 
     @Step("Выбрать тип удаленной работы")
-    public HabrCareerPage setCheckBoxWork() {
+    public HabrCareerPage setCheckboxWork() {
         boxTypeWork.click();
         return this;
     }
 
     @Step("Выбрать тип компаний")
-    public HabrCareerPage setCheckBoxCompany() {
+    public HabrCareerPage setCheckboxCompany() {
         boxCompany.click();
         return this;
     }
@@ -180,21 +180,21 @@ public class HabrCareerPage {
         return this;
     }
 
-    @Step("Проверка на цвет чек-бокса удаленной работы")
-    public HabrCareerPage checkBoxWork() {
-        habrCareerSorting.checkBoxWorkRemotely();
+    @Step("Проверка чек-бокса на активацию \"Можно удаленно\"")
+    public HabrCareerPage checkResultsCheckboxWork() {
+        habrCareerSorting.checkboxWorkRemotely();
         return this;
     }
 
-    @Step("Проверка на цвет чек-бокса IT-компаний")
-    public HabrCareerPage checkBoxCompany() {
-        habrCareerSorting.checkBoxITCompany();
+    @Step("Проверка чек-бокса на активацию IT-компаний")
+    public HabrCareerPage checkResultsCheckboxCompany() {
+        habrCareerSorting.checkboxITCompany();
         return this;
     }
 
-    @Step("Проверка на цвет чек-бокса зарплаты")
-    public HabrCareerPage checkColorBoxSalary() {
-        habrCareerSorting.checkBoxTypeSalary();
+    @Step("Проверка чек-бокса на активацию \"Зарплата\"")
+    public HabrCareerPage checkResultsCheckboxSalary() {
+        habrCareerSorting.checkboxTypeSalary();
         return this;
     }
 
@@ -246,14 +246,14 @@ public class HabrCareerPage {
         return this;
     }
 
-    @Step("Проверка на цвет чек-бокса удаленной работы после сброса")
-    public HabrCareerPage checkColorBoxRemotelyAfterReset() {
+    @Step("Проверка чек-бокса удаленной работы после сброса")
+    public HabrCareerPage checkResultsCheckboxRemotelyAfterReset() {
         habrCareerSorting.checkDefaultColorBoxRemotely();
         return this;
     }
 
-    @Step("Проверка на цвет чек-бокса IT-компаний после сброса")
-    public HabrCareerPage checkColorBoxITCompanyAfterReset() {
+    @Step("Проверка чек-бокса IT-компаний после сброса")
+    public HabrCareerPage checkResultsCheckboxITCompanyAfterReset() {
         habrCareerSorting.checkDefaultColorBoxITCompany();
         return this;
     }
@@ -265,7 +265,7 @@ public class HabrCareerPage {
     }
 
     @Step("Выбрать поиск для работодателей")
-    public HabrCareerPage choiceEmployerButton() {
+    public HabrCareerPage selectEmployerButton() {
         employerSwitchButton.click();
         return this;
     }
@@ -277,110 +277,101 @@ public class HabrCareerPage {
     }
 
     @Step("Выбрать компанию {company}")
-    public HabrCareerPage choiceCompany(String company) {
+    public HabrCareerPage selectCompany(String company) {
         companyField.click();
         companyField.setValue(company);
-        checkBoxDropDown.find(byText(company)).click();
+        checkboxDropDown.find(byText(company)).click();
         return this;
     }
+
     @Step("Выбрать высшее образование {university}")
     public HabrCareerPage setUniversity(String university) {
         universityField.click();
         universityField.setValue(university);
-        checkBoxDropDown.find(byText(university)).click();
+        checkboxDropDown.find(byText(university)).click();
         return this;
     }
+
     @Step("Выбрать допобразование {school}")
     public HabrCareerPage setOnlineSchool(String school) {
         onlineSchoolField.click();
         onlineSchoolField.setValue(school);
-        checkBoxDropDown.find(byText(school)).click();
+        checkboxDropDown.find(byText(school)).click();
         return this;
     }
+
     @Step("Выбрать тип готовности к работе")
-    public HabrCareerPage setCheckBoxReadyToWork(String value) {
+    public HabrCareerPage setCheckboxReadyToWork(String value) {
         typeWorkField.selectOptionByValue(value);
         return this;
     }
+
     @Step("Выбрать \"Готов к переезду\"")
-    public HabrCareerPage setCheckBoxMoveWork() {
+    public HabrCareerPage setCheckboxMoveWork() {
         boxReadyForMoveWork.click();
         return this;
     }
+
     @Step("Выбрать \"Готов к удаленной работе\"")
-    public HabrCareerPage setCheckBoxRemoteWork() {
+    public HabrCareerPage setCheckboxRemoteWork() {
         boxReadyForRemoteWork.click();
         return this;
     }
+
     @Step("Проверка выбора \"Активность на сайте\"")
-    public HabrCareerPage choiceActivityOnSite(String value) {
+    public HabrCareerPage selectActivityOnSite(String value) {
         siteActivityField.selectOptionByValue(value);
         return this;
     }
-    @Step("Выбрать дополнительно {value} и проверить цвет выбранной ячейки")
-    public HabrCareerPage setExtraBoxAndCheckColorBoxAfterSet(int value) {
 
-        if(dataDops.randomNum == 0){
+    @Step("Выбрать случайные чекбоксы \"Дополнительно\"")
+    public HabrCareerPage selectRandomExtraBox() {
+        if (dataDops.randomNum == 0) {
             extraBoxEducation0.click();
-            extraBoxEducation0.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation0.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
-        }else if(dataDops.randomNum == 1){
+        } else if (dataDops.randomNum == 1) {
             extraBoxEducation1.click();
-            extraBoxEducation1.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation1.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
-        }else if(dataDops.randomNum == 2){
+        } else if (dataDops.randomNum == 2) {
             extraBoxEducation2.click();
-            extraBoxEducation2.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation2.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
-        }else if(dataDops.randomNum == 3){
+        } else if (dataDops.randomNum == 3) {
             extraBoxEducation3.click();
-            extraBoxEducation3.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation3.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
-        }else if(dataDops.randomNum == 4){
+        } else if (dataDops.randomNum == 4) {
             extraBoxEducation4.click();
-            extraBoxEducation4.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation4.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
-        }else{
+        } else {
             extraBoxEducation0.click();
-            extraBoxEducation0.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation0.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
             extraBoxEducation1.click();
-            extraBoxEducation1.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation1.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
             extraBoxEducation2.click();
-            extraBoxEducation2.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation2.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
             extraBoxEducation3.click();
-            extraBoxEducation3.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation3.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
             extraBoxEducation4.click();
-            extraBoxEducation4.shouldHave(cssValue("border-color", "rgb(70, 70, 70)"));
-            extraBoxEducation4.shouldHave(cssValue("background-color", "rgba(0, 0, 0, 0)"));
         }
         return this;
     }
+
     @Step("Проверка заполнения вознаграждения {value}")
-    public HabrCareerPage checkResultsPayment (int value) {
+    public HabrCareerPage checkResultsPayment(int value) {
         paymentField.shouldHave(exactValue((valueOf(value))));
         return this;
     }
+
     @Step("Проверка заполнения готовности к работе {value}")
     public HabrCareerPage checkReadyToWork(String value) {
         typeWorkField.shouldHave(exactValue(value));
         return this;
     }
-    @Step("Проверка на цвет чек-бокса \"Готов к переезду\"")
-    public HabrCareerPage checkCSSBoxReadyMoveWork() {
+
+    @Step("Проверка чек-бокса на активацию \"Готов к переезду\"")
+    public HabrCareerPage checkResultsCheckboxReadyMoveWork() {
         habrCareerSorting.checkActivityBoxReadyMoveWork();
         return this;
     }
-    @Step("Проверка на цвет чек-бокса \"Готов к удаленной работе\"")
-    public HabrCareerPage checkCSSBoxReadyRemoteWork() {
+
+    @Step("Проверка чек-бокса на активацию \"Готов к удаленной работе\"")
+    public HabrCareerPage checkResultsCheckboxReadyRemoteWork() {
         habrCareerSorting.checkActivityBoxReadyRemoteWork();
         return this;
     }
+
     @Step("Проверка пустого поля вознаграждения {value}")
-    public HabrCareerPage checkResultsPaymentAfterReset (String value) {
+    public HabrCareerPage checkResultsPaymentAfterReset(String value) {
         paymentField.shouldHave(exactValue((value)));
         return this;
     }

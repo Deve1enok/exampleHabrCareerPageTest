@@ -15,10 +15,12 @@ import java.util.Map;
 public class BaseTest {
     @BeforeAll
     static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://career.habr.com/");
+        Configuration.remote = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.pageLoadStrategy = "eager";
-        Configuration.baseUrl = "https://career.habr.com/";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -28,9 +30,10 @@ public class BaseTest {
         ));
         Configuration.browserCapabilities = capabilities;
     }
+
     @BeforeEach
     void beforeEach() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
     @AfterEach
