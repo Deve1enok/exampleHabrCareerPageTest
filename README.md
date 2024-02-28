@@ -30,19 +30,27 @@ ____
 <a href="https://www.jenkins.io/"><img height= "40" width="40" title="Jenkins" src="media/logo/jenkins-original.svg"></a>
 <a href="https://web.telegram.org/a/"><img height= "40" width="40" title="Telegram" src="media/logo/Telegram.svg"></a>
 <a href="https://www.atlassian.com/ru/software/jira/"><img height= "40" width="40" title="Jira" src="media/logo/Jira.svg"></a>
-<a href="https://www.atlassian.com/ru/software/jira/"><img height= "40" width="40" title="Jira" src="media/logo/JUnit5.svg"></a>
-<a href="https://www.atlassian.com/ru/software/jira/"><img height= "40" width="40" title="Jira" src="media/logo/Idea.svg"></a>
+<a href="https://junit.org/junit5/"><img height= "40" width="40" title="JUnit5" src="media/logo/JUnit5.svg"></a>
+<a href="https://www.jetbrains.com/ru-ru/idea/"><img height= "40" width="40" title="IDEA" src="media/logo/Idea.svg"></a>
 
 </p>
 
 ____
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
+***Форма поиска для соискателей:***
 -  *Поиск работы c пустым полем поиска и сортировкой*
 -  *Поиск работы с заполнением поля поиска и пустой сортировкой*
 -  *Поиск работы с заполнением поля поиска и сортировки*
 -  *Поиск работы c пустым полем и заполненной сортировкой*
 -  *Поиск работы с заполнением поля поиска и сортировки с последующим сбросом сортировки*
+  
+***Форма поиска для работодателей:***
+-  *Поиск специалистов c пустым полем поиска и сортировкой*
+-  *Поиск специалистов с заполнением поля поиска и пустой сортировкой*
+-  *Поиск специалистов с заполнением поля поиска и сортировки*
+-  *Поиск специалистов c пустым полем и заполненной сортировкой*
+-  *Поиск специалистов с заполнением поля поиска и сортировки с последующим сбросом сортировки*
 
 ## <a name="Примеры ручных тест-кейсов">**Примеры ручных тест-кейсов:**</a>
 -  *Смена языка интерфейса с русского на английский*
