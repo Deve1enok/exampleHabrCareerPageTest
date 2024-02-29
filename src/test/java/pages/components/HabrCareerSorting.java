@@ -9,15 +9,19 @@ public class HabrCareerSorting {
     private final SelenideElement boxTypeWork = $("span.checkbox__button", 1);
     private final SelenideElement boxTypeCompany = $("span.checkbox__button", 2);
     private final SelenideElement boxTypeSalary = $("span.checkbox__button", 0);
-    private final SelenideElement boxReadyForMoveWork = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 5);
-    private final SelenideElement boxReadyForRemoteWork = $(".basic-section--appearance-sidebar").$("[class='checkbox']", 6);
+    private final SelenideElement boxReadyForMoveWork = $(".basic-section--appearance-sidebar")
+            .$("[class='checkbox']", 5);
+    private final SelenideElement boxReadyForRemoteWork = $(".basic-section--appearance-sidebar")
+            .$("[class='checkbox']", 6);
 
     public void checkboxWorkRemotely() {
-        boxTypeWork.shouldHave(cssValue("border-color", "rgb(102, 102, 102)"));
+        boxTypeWork
+                .shouldHave(cssValue("border-color", "rgb(102, 102, 102)"));
     }
 
     public void checkboxITCompany() {
-        boxTypeCompany.shouldHave(cssValue("border-color", "rgb(102, 102, 102)"));
+        boxTypeCompany
+                .shouldHave(cssValue("border-color", "rgb(102, 102, 102)"));
     }
 
     public void checkboxTypeSalary() {

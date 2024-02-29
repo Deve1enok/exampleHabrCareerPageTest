@@ -8,9 +8,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.HabrCareerPage;
+import pages.HabrCareerSearchEmployerPage;
+import pages.HabrCareerSearchJobPage;
 
 public class HabrCareerSearchFormEmployerTest extends BaseTest {
     HabrCareerPage habrCareerPage = new HabrCareerPage();
+    HabrCareerSearchEmployerPage habrCareerSearchEmployer = new HabrCareerSearchEmployerPage();
+    HabrCareerSearchJobPage habrCareerVacancies = new HabrCareerSearchJobPage();
     DataCareer dataCareerPage = new DataCareer();
     DataSpecializationsCareer dataFakerSpecialization = new DataSpecializationsCareer();
     DataQualificationsCareer dataFakerQualification = new DataQualificationsCareer();
@@ -36,33 +40,33 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
         habrCareerPage.openCareerPage(dataCareerPage.emptyString)
                 .disableBanner()
                 .selectEmployerButton()
-                .setSearchTesting(dataFakerSearchValue.searchValueOptions)
-                .selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
+                .setSearchTesting(dataFakerSearchValue.searchValueOptions);
+        habrCareerVacancies.selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
                 .selectSecondSpecialization(dataFakerSpecialization.getSpecializationOption)
                 .selectQualification(dataFakerQualification.qualificationOptions)
-                .selectProfessionalSkills(dataFakerSkills.profSkillsOptions)
-                .setPayment(dataFakerSalary.salaryOptions)
-                .selectTypeSalary(dataFakerCurrency.currencySalaryOptions)
-                .setLocation(dataFakerLocation.locationOptions)
-                .selectCompany(dataCompanyValue.companyOptions)
-                .setCheckboxCompany()
-                .setUniversity(dataUniversityValue.universityOptions)
+                .selectProfessionalSkills(dataFakerSkills.profSkillsOptions);
+        habrCareerSearchEmployer.setPayment(dataFakerSalary.salaryOptions);
+        habrCareerVacancies.selectTypeSalary(dataFakerCurrency.currencySalaryOptions)
+                .setLocation(dataFakerLocation.locationOptions);
+        habrCareerSearchEmployer.selectCompany(dataCompanyValue.companyOptions);
+        habrCareerVacancies.setCheckboxCompany();
+        habrCareerSearchEmployer.setUniversity(dataUniversityValue.universityOptions)
                 .setOnlineSchool(dataOnlineSchoolValue.schoolOptions)
                 .setCheckboxReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
                 .setCheckboxMoveWork()
                 .setCheckboxRemoteWork()
                 .selectActivityOnSite(dataActivityOnSiteValue.activityValue)
-                .selectRandomExtraBox()
+                .selectRandomExtraBox();
 
-                .checkSearchField(dataFakerSearchValue.searchValueOptions)
+        habrCareerVacancies.checkSearchField(dataFakerSearchValue.searchValueOptions)
                 .checkResultsSpecialization(dataFakerSpecialization.getSpecializationOption)
                 .checkResultsQualification(dataFakerQualification.qualificationOptions)
-                .checkResetProfessionalSkills()
-                .checkResultsPayment(dataFakerSalary.salaryOptions)
-                .checkResultsCurrency(dataFakerCurrency.currencySalaryOptions)
-                .checkResultsLocation(dataFakerLocation.locationOptions)
+                .checkResetProfessionalSkills();
+        habrCareerSearchEmployer.checkResultsPayment(dataFakerSalary.salaryOptions);
+        habrCareerVacancies.checkResultsCurrency(dataFakerCurrency.currencySalaryOptions)
+                .checkResultsLocation(dataFakerLocation.locationOptions);
 
-                .checkReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
+        habrCareerSearchEmployer.checkReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
                 .checkResultsCheckboxReadyMoveWork()
                 .checkResultsCheckboxReadyRemoteWork();
     }
@@ -78,9 +82,9 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
         habrCareerPage.openCareerPage(dataCareerPage.emptyString)
                 .disableBanner()
                 .selectEmployerButton()
-                .setSearchTesting(dataCareerPage.emptyString)
+                .setSearchTesting(dataCareerPage.emptyString);
 
-                .checkSearchField(dataCareerPage.emptyString);
+        habrCareerVacancies.checkSearchField(dataCareerPage.emptyString);
     }
 
     @Test
@@ -94,9 +98,9 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
         habrCareerPage.openCareerPage(dataCareerPage.emptyString)
                 .disableBanner()
                 .selectEmployerButton()
-                .setSearchTesting(dataFakerSearchValue.searchValueOptions)
+                .setSearchTesting(dataFakerSearchValue.searchValueOptions);
 
-                .checkSearchField(dataFakerSearchValue.searchValueOptions);
+        habrCareerVacancies.checkSearchField(dataFakerSearchValue.searchValueOptions);
     }
 
     @Test
@@ -110,33 +114,33 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
         habrCareerPage.openCareerPage(dataCareerPage.emptyString)
                 .disableBanner()
                 .selectEmployerButton()
-                .setSearchTesting(dataFakerSearchValue.searchValueOptions)
-                .selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
+                .setSearchTesting(dataFakerSearchValue.searchValueOptions);
+        habrCareerVacancies.selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
                 .selectSecondSpecialization(dataFakerSpecialization.getSpecializationOption)
                 .selectQualification(dataFakerQualification.qualificationOptions)
-                .selectProfessionalSkills(dataFakerSkills.profSkillsOptions)
-                .setPayment(dataFakerSalary.salaryOptions)
-                .selectTypeSalary(dataFakerCurrency.currencySalaryOptions)
-                .setLocation(dataFakerLocation.locationOptions)
-                .selectCompany(dataCompanyValue.companyOptions)
-                .setCheckboxCompany()
-                .setUniversity(dataUniversityValue.universityOptions)
+                .selectProfessionalSkills(dataFakerSkills.profSkillsOptions);
+        habrCareerSearchEmployer.setPayment(dataFakerSalary.salaryOptions);
+        habrCareerVacancies.selectTypeSalary(dataFakerCurrency.currencySalaryOptions)
+                .setLocation(dataFakerLocation.locationOptions);
+        habrCareerSearchEmployer.selectCompany(dataCompanyValue.companyOptions);
+        habrCareerVacancies.setCheckboxCompany();
+        habrCareerSearchEmployer.setUniversity(dataUniversityValue.universityOptions)
                 .setOnlineSchool(dataOnlineSchoolValue.schoolOptions)
                 .setCheckboxReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
                 .setCheckboxMoveWork()
                 .setCheckboxRemoteWork()
                 .selectActivityOnSite(dataActivityOnSiteValue.activityValue)
-                .selectRandomExtraBox()
-                .resetCareerSorting()
+                .selectRandomExtraBox();
+        habrCareerVacancies.resetCareerSorting()
 
                 .checkSearchField(dataFakerSearchValue.searchValueOptions)
                 .checkResetSpecialization(dataCareerPage.defaultSpecializationField)
                 .checkResetQualification(dataCareerPage.emptyString)
-                .checkResetProfessionalSkills()
-                .checkResultsPaymentAfterReset(dataCareerPage.emptyString)
-                .checkResetCurrency(dataCareerPage.defaultTypeSalary)
-                .checkResetLocation()
-                .checkReadyToWork(dataCareerPage.emptyString)
+                .checkResetProfessionalSkills();
+        habrCareerSearchEmployer.checkResultsPaymentAfterReset(dataCareerPage.emptyString);
+        habrCareerVacancies.checkResetCurrency(dataCareerPage.defaultTypeSalary)
+                .checkResetLocation();
+        habrCareerSearchEmployer.checkReadyToWork(dataCareerPage.emptyString)
                 .checkResultsCheckboxReadyMoveWork()
                 .checkResultsCheckboxReadyRemoteWork();
     }
@@ -152,33 +156,33 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
         habrCareerPage.openCareerPage(dataCareerPage.emptyString)
                 .disableBanner()
                 .selectEmployerButton()
-                .setSearchTesting(dataCareerPage.emptyString)
-                .selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
+                .setSearchTesting(dataCareerPage.emptyString);
+        habrCareerVacancies.selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
                 .selectSecondSpecialization(dataFakerSpecialization.getSpecializationOption)
                 .selectQualification(dataFakerQualification.qualificationOptions)
-                .selectProfessionalSkills(dataFakerSkills.profSkillsOptions)
-                .setPayment(dataFakerSalary.salaryOptions)
-                .selectTypeSalary(dataFakerCurrency.currencySalaryOptions)
-                .setLocation(dataFakerLocation.locationOptions)
-                .selectCompany(dataCompanyValue.companyOptions)
-                .setCheckboxCompany()
-                .setUniversity(dataUniversityValue.universityOptions)
+                .selectProfessionalSkills(dataFakerSkills.profSkillsOptions);
+        habrCareerSearchEmployer.setPayment(dataFakerSalary.salaryOptions);
+        habrCareerVacancies.selectTypeSalary(dataFakerCurrency.currencySalaryOptions)
+                .setLocation(dataFakerLocation.locationOptions);
+        habrCareerSearchEmployer.selectCompany(dataCompanyValue.companyOptions);
+        habrCareerVacancies.setCheckboxCompany();
+        habrCareerSearchEmployer.setUniversity(dataUniversityValue.universityOptions)
                 .setOnlineSchool(dataOnlineSchoolValue.schoolOptions)
                 .setCheckboxReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
                 .setCheckboxMoveWork()
                 .setCheckboxRemoteWork()
                 .selectActivityOnSite(dataActivityOnSiteValue.activityValue)
-                .selectRandomExtraBox()
+                .selectRandomExtraBox();
 
-                .checkSearchField(dataCareerPage.emptyString)
+        habrCareerVacancies.checkSearchField(dataCareerPage.emptyString)
                 .checkResultsSpecialization(dataFakerSpecialization.getSpecializationOption)
                 .checkResultsQualification(dataFakerQualification.qualificationOptions)
-                .checkResetProfessionalSkills()
-                .checkResultsPayment(dataFakerSalary.salaryOptions)
-                .checkResultsCurrency(dataFakerCurrency.currencySalaryOptions)
-                .checkResultsLocation(dataFakerLocation.locationOptions)
+                .checkResetProfessionalSkills();
+        habrCareerSearchEmployer.checkResultsPayment(dataFakerSalary.salaryOptions);
+        habrCareerVacancies.checkResultsCurrency(dataFakerCurrency.currencySalaryOptions)
+                .checkResultsLocation(dataFakerLocation.locationOptions);
 
-                .checkReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
+        habrCareerSearchEmployer.checkReadyToWork(dataReadyToWorkValue.readyToWorkOptions)
                 .checkResultsCheckboxReadyMoveWork()
                 .checkResultsCheckboxReadyRemoteWork();
     }
