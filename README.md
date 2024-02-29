@@ -33,6 +33,8 @@ ____
 <a href="https://junit.org/junit5/"><img height= "40" width="40" title="JUnit5" src="media/logo/JUnit5.svg"></a>
 <a href="https://www.jetbrains.com/ru-ru/idea/"><img height= "40" width="40" title="IDEA" src="media/logo/Idea.svg"></a>
 
+Для написания автотестов применялся инструмент `IntelliJIDEA`. С помощью сборщика `Gradle`, мы подключили библиотеки `Java`, `JUnit5`, `Selenide`, `Allure`, `JavaFaker`. Для удаленного запуска автотестов был подключен `Jenkins`.
+
 </p>
 
 ____
