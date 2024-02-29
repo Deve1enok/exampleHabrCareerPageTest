@@ -37,7 +37,7 @@ ____
 
 ____
 <a id="cases"></a>
-## <a name="Примеры тест-кейсов">Примеры тест-кейсов:</a>
+## <a name="Примеры тест-кейсов">**Примеры тест-кейсов:**</a>
 **Автоматизированные тест-кейсы на форму поиска для соискателей:**
 -  Поиск работы c пустым полем поиска и сортировкой
 -  Поиск работы с заполнением поля поиска и пустой сортировкой
@@ -76,7 +76,7 @@ gradle clean negative_tests
 ____
 <a id="jenkins"></a>
 ## <img alt="Jenkins" height="25" src="media/logo/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/)</a>
-### **Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
+**Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
 <p align="center">  
 <img title="Jenkins" src="media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/>
 </p>
