@@ -17,7 +17,7 @@
 
 ____
 <a id="tools"></a>
-## :computer:<a name="Используемый стек">**Используемый стек:**</a>
+## :computer: <a name="Используемый стек">**Используемый стек:**</a>
 
 <p align="center">
 <a href="https://www.java.com/"><img height= "40" width="40" title="Java" src="media/logo/java-original.svg"></a>
