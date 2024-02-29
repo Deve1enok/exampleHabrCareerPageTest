@@ -109,7 +109,7 @@ ____
 
 <a id="allureTestOps"></a>
 ## <img alt="AllureTestOps" src="media/logo/Allure_TO.svg" height= "25" width="25" /><a name="Интеграция AllureTO"></a>Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/3884/dashboards)</a>
-### **На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.**
+На `Dashboard` в `Allure TestOps` видна статистика тестирования: количество тест-кейсов, количество ручных/автоматизированных тестов, количество запусков тест-кейсов.
 <p align="center">  
 <img title="AllureTestOps Dashboard" src="media/screenshots/allureTestOpsDashBoard.jpg">
 </p>
@@ -132,7 +132,7 @@ ____
 
 <a id="jira"></a>
 ## <img alt="jiraTask" src="media/logo/Jira.svg" height= "25" width="25"/><a name="Интеграция Jira"></a>Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1010)</a>
-### **Реализована интеграция `Allure TestOps` с `Jira`, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.**
+Реализована интеграция `Allure TestOps` с `Jira`, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 <p align="center">  
 <img title="Jira Tasks" src="media/screenshots/jiraTask.jpg">
 </p>
@@ -141,7 +141,7 @@ ____
 
 <a id="telegram"></a>
 ## <img title="Telegram" width="25" height="25" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота.
-### **После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.**
+После завершения сборки <code>Telegram</code> бот, автоматически обрабатывает информацию и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
 <img title="Telegram Notifications" src="media/screenshots/telegramBotInfo.jpg">
@@ -152,7 +152,7 @@ ____
 
 <a id="selenoid"></a>
 ## <img title="Selenoid" width="25" height="25" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid.
-### **В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.**
+В отчетах <code>Allure</code> для каждого теста прикреплен не только скриншот, но и видео прохождения теста.
 <p align="center">
 <img title="Selenoid Video" src="media/screenshots/videoTestHabr.gif">
 </p>
