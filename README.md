@@ -76,7 +76,7 @@ gradle clean negative_tests
 ____
 <a id="jenkins"></a>
 ## <img alt="Jenkins" height="25" src="media/logo/jenkins-original.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/)</a>
-**Для запуска сборки необходимо перейти в раздел `Build with Parameters` выбрать нужные вам параметры и нажать кнопку `Build`.**
+Для запуска сборки необходимо перейти в раздел `Build with Parameters` и выбрать нужные вам параметры и нажать кнопку `Build`.
 <p align="center">  
 <img title="Jenkins" src="media/screenshots/jenkinsBuild.jpg" alt="Jenkins"/>
 </p>
@@ -92,14 +92,14 @@ ____
 <a id="allure"></a>
 ## <img src="media/logo/Allure.svg" height= "25" width="25"  alt="Allure"/> Allure <a target="_blank" href="https://jenkins.autotests.cloud/job/portfolio_example_habr_career_jenkins_test/allure/">отчёт</a>
 
-## *Основная страница отчёта*
+Основная страница отчёта
 
 <p align="center">  
 <img title="Allure Overview Dashboard" src="media/screenshots/allureReportMain.jpg">  
 </p>  
 
-## *Подробный отчёт одного из тест-кейсов*
-### **На вкладке <code>Behaviors</code> можно рассмотреть каждый тест-кейс и его шаги воспроизведения, файлы(скриншоты,видео,код и т.п.).**
+Подробный отчёт одного из тест-кейсов
+На вкладке <code>Behaviors</code> можно рассмотреть каждый тест-кейс и его шаги воспроизведения, файлы(скриншоты,видео,код и т.п.).
 <p align="center">  
 <img title="Allure Overview Dashboard" src="media/screenshots/allureReportsTK.jpg">  
 </p>
