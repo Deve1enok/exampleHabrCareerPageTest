@@ -67,7 +67,7 @@ ____
 ## :keyboard: Запуск автотестов
 
 
-***Локальный запуск тестов:***
+Локальный запуск тестов:
 ```bash  
 gradle clean test_suite
 gradle clean positive_tests
