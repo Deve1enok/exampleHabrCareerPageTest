@@ -122,7 +122,7 @@ public class HabrCareerSearchFormJobTest extends BaseTest {
                 .checkResetSalary()
                 .checkResetCurrency(dataCareerPage.defaultTypeSalary)
                 .checkResetLocation()
-                .checkResetTypeWork(dataCareerPage.emptyString)
+                .checkResetTypeWorkAfterReset()
                 .checkResultsCheckboxSalary()
                 .checkResultsCheckboxRemotelyAfterReset()
                 .checkResultsCheckboxITCompanyAfterReset();

@@ -2,6 +2,7 @@ package pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import data.DataCareer;
 import io.qameta.allure.Step;
 import pages.components.HabrCareerSorting;
 
@@ -12,6 +13,7 @@ import static java.lang.String.valueOf;
 
 public class HabrCareerSearchJobPage {
     HabrCareerSorting habrCareerSorting = new HabrCareerSorting();
+    DataCareer dataCareer = new DataCareer();
 
     private final SelenideElement specializationField = $(".specs-picker__specs-placeholder"),
             mainSpecialization = $(".specs-selector").$("div"),
@@ -214,8 +216,8 @@ public class HabrCareerSearchJobPage {
     }
 
     @Step("Проверка на пустое поле \"Тип занятости\" после сброса")
-    public HabrCareerSearchJobPage checkResetTypeWork(String value) {
-        typeWorkField.shouldHave(exactValue(value));
+    public HabrCareerSearchJobPage checkResetTypeWorkAfterReset() {
+        typeWorkField.shouldHave(exactValue(dataCareer.emptyString));
         return this;
     }
 
