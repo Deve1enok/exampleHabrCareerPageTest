@@ -13,8 +13,8 @@ public class HabrCareerPage {
 
 
     @Step("Открыть главную страницу {value}")
-    public HabrCareerPage openCareerPage(String value) {
-        open(value);
+    public HabrCareerPage openCareerPage() {
+        open("");
         return this;
     }
 

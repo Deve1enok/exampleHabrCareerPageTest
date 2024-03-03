@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import data.DataExtra;
 import io.qameta.allure.Step;
 import pages.components.HabrCareerSorting;
 
@@ -12,7 +11,6 @@ import static java.lang.String.valueOf;
 
 public class HabrCareerSearchEmployerPage {
     HabrCareerSorting habrCareerSorting = new HabrCareerSorting();
-    DataExtra dataDops = new DataExtra();
 
     private final SelenideElement paymentField = $(".basic-section--appearance-sidebar")
             .$("input[placeholder='До']"),
@@ -96,25 +94,13 @@ public class HabrCareerSearchEmployerPage {
         return this;
     }
 
-    @Step("Выбрать случайные чекбоксы \"Дополнительно\"")
-    public HabrCareerSearchEmployerPage selectRandomExtraBox() {
-        if (dataDops.randomNum == 0) {
-            extraBoxEducation0.click();
-        } else if (dataDops.randomNum == 1) {
-            extraBoxEducation1.click();
-        } else if (dataDops.randomNum == 2) {
-            extraBoxEducation2.click();
-        } else if (dataDops.randomNum == 3) {
-            extraBoxEducation3.click();
-        } else if (dataDops.randomNum == 4) {
-            extraBoxEducation4.click();
-        } else {
-            extraBoxEducation0.click();
-            extraBoxEducation1.click();
-            extraBoxEducation2.click();
-            extraBoxEducation3.click();
-            extraBoxEducation4.click();
-        }
+    @Step("Выбрать все чекбоксы \"Дополнительно\"")
+    public HabrCareerSearchEmployerPage selectAllExtraBox() {
+        extraBoxEducation0.click();
+        extraBoxEducation1.click();
+        extraBoxEducation2.click();
+        extraBoxEducation3.click();
+        extraBoxEducation4.click();
         return this;
     }
 

@@ -37,7 +37,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
     @Story("Позитивные тесты")
     void searchCareerFormEmployerFullSorting() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .selectEmployerButton()
                 .setSearchTesting(dataFakerSearchValue.searchValueOptions);
@@ -56,7 +56,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
                 .setCheckboxMoveWork()
                 .setCheckboxRemoteWork()
                 .selectActivityOnSite(dataActivityOnSiteValue.activityValue)
-                .selectRandomExtraBox();
+                .selectAllExtraBox();
 
         habrCareerVacancies.checkSearchField(dataFakerSearchValue.searchValueOptions)
                 .checkResultsSpecialization(dataFakerSpecialization.getSpecializationOption)
@@ -79,7 +79,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
     @Story("Негативные тесты")
     void searchCareerFormEmployerEmptyShouldHaveWorkPage() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .selectEmployerButton()
                 .setSearchTesting(dataCareerPage.emptyString);
@@ -95,7 +95,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
     @Story("Позитивные тесты")
     void searchCareerFormEmployerShouldHaveTestingPage() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .selectEmployerButton()
                 .setSearchTesting(dataFakerSearchValue.searchValueOptions);
@@ -111,7 +111,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
     @Story("Позитивные тесты")
     void searchCareerFormEmployerFullSortingShouldBeReset() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .selectEmployerButton()
                 .setSearchTesting(dataFakerSearchValue.searchValueOptions);
@@ -130,7 +130,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
                 .setCheckboxMoveWork()
                 .setCheckboxRemoteWork()
                 .selectActivityOnSite(dataActivityOnSiteValue.activityValue)
-                .selectRandomExtraBox();
+                .selectAllExtraBox();
         habrCareerVacancies.resetCareerSorting()
 
                 .checkSearchField(dataFakerSearchValue.searchValueOptions)
@@ -153,7 +153,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
     @Story("Негативные тесты")
     void searchCareerFormEmployerEmptyShouldHaveFullSorting() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .selectEmployerButton()
                 .setSearchTesting(dataCareerPage.emptyString);
@@ -172,7 +172,7 @@ public class HabrCareerSearchFormEmployerTest extends BaseTest {
                 .setCheckboxMoveWork()
                 .setCheckboxRemoteWork()
                 .selectActivityOnSite(dataActivityOnSiteValue.activityValue)
-                .selectRandomExtraBox();
+                .selectAllExtraBox();
 
         habrCareerVacancies.checkSearchField(dataCareerPage.emptyString)
                 .checkResultsSpecialization(dataFakerSpecialization.getSpecializationOption)

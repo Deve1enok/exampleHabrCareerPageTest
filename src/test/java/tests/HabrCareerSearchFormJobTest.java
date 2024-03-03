@@ -35,7 +35,7 @@ public class HabrCareerSearchFormJobTest extends BaseTest {
     @Story("Позитивные тесты")
     void searchCareerFormShouldHaveTestingPage() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .setSearchTesting(dataFakerSearchValue.searchValueOptions);
 
@@ -50,7 +50,7 @@ public class HabrCareerSearchFormJobTest extends BaseTest {
     @Story("Негативные тесты")
     void searchCareerFormEmptyShouldHaveWorkPage() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .setSearchTesting(dataCareerPage.emptyString);
 
@@ -65,7 +65,7 @@ public class HabrCareerSearchFormJobTest extends BaseTest {
     @Story("Позитивные тесты")
     void searchCareerFormShouldHaveFullSorting() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .setSearchTesting(dataFakerSearchValue.searchValueOptions);
         habrCareerVacancies.selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
@@ -100,7 +100,7 @@ public class HabrCareerSearchFormJobTest extends BaseTest {
     @Story("Позитивные тесты")
     void searchCareerFormFullSortingShouldBeReset() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .setSearchTesting(dataFakerSearchValue.searchValueOptions);
         habrCareerVacancies.selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
@@ -136,7 +136,7 @@ public class HabrCareerSearchFormJobTest extends BaseTest {
     @Story("Негативные тесты")
     void searchCareerFormEmptyShouldHaveFullSorting() {
 
-        habrCareerPage.openCareerPage(dataCareerPage.emptyString)
+        habrCareerPage.openCareerPage()
                 .disableBanner()
                 .setSearchTesting(dataCareerPage.emptyString);
         habrCareerVacancies.selectFirstSpecialization(dataFakerSpecialization.specializationOptions)
